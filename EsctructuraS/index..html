@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Figuras Geométricas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="container1">Calculadora de Área y Perímetro</h1>
+    
+    <div class="container">
+        <label for="shape-select">Seleccione una figura:</label>
+        <select id="shape-select" onchange="displayForm()">
+            <option value="rectangulo">Rectángulo</option>
+            <option value="circulo">Círculo</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="triangulo">Triángulo</option>
+        </select>
+        
+        <form id="shape-form" onsubmit="calculate(event)">
+            <!-- Aquí se insertarán los inputs específicos según la figura seleccionada -->
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
